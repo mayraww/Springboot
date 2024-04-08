@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+</head>
+<body>
+    <h2>Aggiungi Dipendente:</h2>
+    <form action="/inserisci-dipendente" method="post">
+        
+        <label for="lastName">Cognome:</label><br>
+        <input type="text" id="lastName" name="cognome"><br>
+        <label for="position">Mansione:</label><br>
+        <input type="text" id="position" name="mansione"><br>
+        <label for="salary">Stipendio:</label><br>
+        <input type="text" id="salary" name="stipendio"><br><br>
+        <input type="submit" value="Inserisci">
+    </form>
+   
+    <br><hr>
+    <h2>Cancella Dipendente:</h2>
+    <form action="/cancella-dipendente" method="post">
+    <label for="lastName">Cognome:</label><br>
+    <input type="text" id="lastName" name="cognome"><br>
+    <input type="submit" value="Cancella">
+    </form>
+    
+    <br><hr>
+    <h2>Modifica dati Dipendente:</h2>
+    <ul><li><h4>Modifica cognome dipendente</h4>
+    <form action="/modifica-cognome" method="post">
+    <label for="NewlastName">Inserisci il Nuovo Cognome:</label><br>
+    <input type="text" id="lastName" name="NuovoCognome"><br>
+    <label for="lastName">Inserisci il Cognome errato:</label><br>
+    <input type="text" id="lastName" name="cognome"><br>
+    <input type="submit" value="Modifica">
+    </form></li></ul>
+    
+    <ul><li><h4>Modifica mansione dipendendente</h4>
+    <form action="/modifica-mansione" method="post">
+    <label for="position">Inserisci la Nuova Mansione:</label><br>
+    <input type="text" id="position" name="NuovaMansione"><br>
+    <label for="lastName">Inserisci il Cognome del dipendente:</label><br>
+    <input type="text" id="lastName" name="cognome"><br>
+    <input type="submit" value="Modifica">
+    </form></li></ul>
+    
+    <ul><li><h4>Modifica stipendio dipendente</h4>
+    <form action="/modifica-stipendio" method="post">
+    <label for="salary">Inserisci il Nuovo Stipendio:</label><br>
+    <input type="text" id="salary" name="NuovoStipendio"><br>
+    <label for="lastName">Cognome:</label><br>
+    <input type="text" id="lastName" name="cognome"><br>
+    <input type="submit" value="Modifica">
+    </form></li></ul>
+</body>
+</html>
